@@ -2,7 +2,7 @@ data {
     int N;
     int y[N];
 }
-parametars {
+parameters {
     real<lower=0, upper=1> theta;
 }
 model {

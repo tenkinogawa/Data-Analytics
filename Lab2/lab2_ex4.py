@@ -4,10 +4,17 @@ import matplotlib.pyplot as plt
 from cmdstanpy import CmdStanModel
 import os
 
+F = len('Agnieszka')
+L = len('Welian')
+
 stan_data = {
-    "N":12,
-    "y":[0,1,0,1,0,0,0,1,0,1,0,1]
+    "y_guess":[1],
+    "theta":[(F+L)/2]
 }
 
 model6 = CmdStanModel(stan_file='code_6.stan')
-sample = model.sample(stan_data)
+tunes = model6.sample(data = stan_data, fixed_param=True, iter_sampling=1, iter_warmup=0)
+tunes.draws_pd()
+print(dir(tunes))
+
+# don't know how to access the sigma to make it printed
