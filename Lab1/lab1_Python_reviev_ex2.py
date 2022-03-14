@@ -4,9 +4,12 @@ import matplotlib.pyplot as plt
 from cmdstanpy import CmdStanModel
 import os
 
+F = len("Agnieszka")
+L = len("Welian")
+print([0]*F + [1] * L)
 stan_data = {
-    "N":12,
-    "y":[0,1,0,1,0,0,0,1,0,1,0,1]
+    "N":F+L,
+    "y":[0] * F + [1] * L
 }
 
 model = CmdStanModel(stan_file='bern_1.stan')
