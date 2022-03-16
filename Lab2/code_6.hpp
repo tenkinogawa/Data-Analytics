@@ -8,7 +8,7 @@ using namespace stan::math;
 
 
 stan::math::profile_map profiles__;
-static constexpr std::array<const char*, 13> locations_array__ = 
+static constexpr std::array<const char*, 12> locations_array__ = 
 {" (found before start of program)",
  " (in 'C:/Users/AGNIES~1/Desktop/SEM8~1/DATAAN~1/DataA/DATA-A~1/Lab2/code_6.stan', line 24, column 4 to column 27)",
  " (in 'C:/Users/AGNIES~1/Desktop/SEM8~1/DATAAN~1/DataA/DATA-A~1/Lab2/code_6.stan', line 10, column 4 to column 22)",
@@ -17,7 +17,6 @@ static constexpr std::array<const char*, 13> locations_array__ =
  " (in 'C:/Users/AGNIES~1/Desktop/SEM8~1/DATAAN~1/DataA/DATA-A~1/Lab2/code_6.stan', line 16, column 4 to column 16)",
  " (in 'C:/Users/AGNIES~1/Desktop/SEM8~1/DATAAN~1/DataA/DATA-A~1/Lab2/code_6.stan', line 17, column 4 to column 15)",
  " (in 'C:/Users/AGNIES~1/Desktop/SEM8~1/DATAAN~1/DataA/DATA-A~1/Lab2/code_6.stan', line 19, column 4 to column 61)",
- " (in 'C:/Users/AGNIES~1/Desktop/SEM8~1/DATAAN~1/DataA/DATA-A~1/Lab2/code_6.stan', line 20, column 4 to column 46)",
  " (in 'C:/Users/AGNIES~1/Desktop/SEM8~1/DATAAN~1/DataA/DATA-A~1/Lab2/code_6.stan', line 3, column 8 to column 25)",
  " (in 'C:/Users/AGNIES~1/Desktop/SEM8~1/DATAAN~1/DataA/DATA-A~1/Lab2/code_6.stan', line 4, column 8 to column 74)",
  " (in 'C:/Users/AGNIES~1/Desktop/SEM8~1/DATAAN~1/DataA/DATA-A~1/Lab2/code_6.stan', line 5, column 8 to column 22)",
@@ -54,7 +53,7 @@ template <typename T0__, typename T1__, typename T2__,
     try {
       Eigen::Matrix<local_scalar_t__, -1, 1> deltas =
          Eigen::Matrix<local_scalar_t__, -1, 1>::Constant(1, DUMMY_VAR__);
-      current_statement__ = 10;
+      current_statement__ = 9;
       stan::model::assign(deltas,
         ((2 *
            (stan::math::normal_cdf(
@@ -64,7 +63,7 @@ template <typename T0__, typename T1__, typename T2__,
                 stan::model::rvalue(y, "y", stan::model::index_uni(1)))) -
              0.5)) - 0.99),
         "assigning variable deltas", stan::model::index_uni(1));
-      current_statement__ = 11;
+      current_statement__ = 10;
       return deltas;
     } catch (const std::exception& e) {
       stan::lang::rethrow_located(e, locations_array__[current_statement__]);
@@ -186,14 +185,6 @@ tail_delta_functor__::operator()(const T0__& y, const T1__& theta,
       stan::model::assign(y,
         stan::math::algebra_solver(tail_delta_functor__(), y_guess, theta,
           x_r, x_i, pstream__), "assigning variable y");
-      current_statement__ = 8;
-      if (pstream__) {
-        stan::math::stan_print(pstream__, "Standard deviation = ");
-        stan::math::stan_print(pstream__, stan::math::exp(
-                                            stan::model::rvalue(y, "y",
-                                              stan::model::index_uni(1))));
-        stan::math::stan_print(pstream__, "\n");
-      }
     } catch (const std::exception& e) {
       stan::lang::rethrow_located(e, locations_array__[current_statement__]);
     }

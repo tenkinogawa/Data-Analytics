@@ -7,9 +7,6 @@ import scipy.stats as stats
 F = len('Agnieszka')
 L = len('Welian')
 
-# model = CmdStanModel(stan_file='code_5.stan')
-# sample = model.sample(data={'theta':F})
-
 model4 = CmdStanModel(stan_file='code_4.stan')
 sample4 = model4.sample(output_dir='samples')
 sample4.diagnose()

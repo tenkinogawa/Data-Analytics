@@ -4,11 +4,6 @@ import matplotlib.pyplot as plt
 from cmdstanpy import CmdStanModel
 import scipy.stats as stats
 
-F = len('Agnieszka')
-L = len('Welian')
-
-# array_sample = [0] * F
-# print(array_sample)
 stan_data = {
     "N":2,
     # "theta": 1,

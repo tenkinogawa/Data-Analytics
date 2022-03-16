@@ -17,7 +17,7 @@ transformed data {
     int x_i[0];
 
     y = algebra_solver(tail_delta, y_guess, theta, x_r, x_i);
-    print("Standard deviation = ", exp(y[1]));
+    
 }
 
 generated quantities {

@@ -4,8 +4,6 @@ import matplotlib.pyplot as plt
 from cmdstanpy import CmdStanModel
 import scipy.stats as stats
 
-plt.close('all')
-
 F = len('Agnieszka')
 L = len('Welian')
 
