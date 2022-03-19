@@ -8,6 +8,6 @@ generated quantities {
 
     array[N] real y_prior;
     for (n in 1:N) {
-        y_prior[n] = normal_rng(mu, sigma)
+        y_prior[n] = normal_rng(mu, sigma);
     }
 }

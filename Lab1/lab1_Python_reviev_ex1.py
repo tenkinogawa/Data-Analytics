@@ -21,5 +21,5 @@ df.loc['2018-01-01':'2018-12-31'].plot(y = ['theta_1', 'theta_2', 'theta_3', 'th
 df.loc['2018-01-01':'2018-12-31'].hist(column = ['theta_1', 'theta_2', 'theta_3', 'theta_4'], figsize=(16, 20), bins=50, xlabelsize=8, ylabelsize=8)
 
 # KDE
-df.loc['2018-01-01':'2018-12-31'].kde(y = ['theta_1', 'theta_2', 'theta_3', 'theta_4'])
+# df.loc['2018-01-01':'2018-12-31'].kde(y = ['theta_1', 'theta_2', 'theta_3', 'theta_4'])
 plt.show()
