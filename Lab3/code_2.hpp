@@ -61,7 +61,7 @@ class code_2_model final : public model_base_crtp<code_2_model> {
       current_statement__ = 4;
       N = context__.vals_i("N")[(1 - 1)];
       current_statement__ = 4;
-      stan::math::check_greater_or_equal(function__, "N", N, 1);
+      stan::math::check_greater_or_equal(function__, "N", N, 0);
       current_statement__ = 5;
       stan::math::validate_non_negative_index("y", "N", N);
       current_statement__ = 6;
