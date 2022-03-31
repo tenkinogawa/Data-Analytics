@@ -161,9 +161,9 @@ class height_2a_ppc_model final : public model_base_crtp<height_2a_ppc_model> {
         stan::model::assign(height,
           stan::math::normal_rng(
             ((stan::model::rvalue(weight, "weight",
-                stan::model::index_uni(N)) * beta) + alpha), sigma,
+                stan::model::index_uni(i)) * beta) + alpha), sigma,
             base_rng__),
-          "assigning variable height", stan::model::index_uni(N));
+          "assigning variable height", stan::model::index_uni(i));
       }
       out__.write(alpha);
       out__.write(beta);

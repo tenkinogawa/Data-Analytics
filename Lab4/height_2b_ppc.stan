@@ -1,6 +1,6 @@
 data {
    int N;
-   real weight [N];
+   real weight[N];
 }
 
 generated quantities {

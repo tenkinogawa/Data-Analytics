@@ -18,8 +18,8 @@ static constexpr std::array<const char*, 12> locations_array__ =
  " (in 'C:/Users/AGNIES~1/Desktop/SEM8~1/DATAAN~1/DataA/DATA-A~1/Lab4/height_2b_ppc.stan', line 11, column 18 to line 13, column 4)",
  " (in 'C:/Users/AGNIES~1/Desktop/SEM8~1/DATAAN~1/DataA/DATA-A~1/Lab4/height_2b_ppc.stan', line 11, column 3 to line 13, column 4)",
  " (in 'C:/Users/AGNIES~1/Desktop/SEM8~1/DATAAN~1/DataA/DATA-A~1/Lab4/height_2b_ppc.stan', line 2, column 3 to column 9)",
- " (in 'C:/Users/AGNIES~1/Desktop/SEM8~1/DATAAN~1/DataA/DATA-A~1/Lab4/height_2b_ppc.stan', line 3, column 16 to column 17)",
- " (in 'C:/Users/AGNIES~1/Desktop/SEM8~1/DATAAN~1/DataA/DATA-A~1/Lab4/height_2b_ppc.stan', line 3, column 3 to column 19)",
+ " (in 'C:/Users/AGNIES~1/Desktop/SEM8~1/DATAAN~1/DataA/DATA-A~1/Lab4/height_2b_ppc.stan', line 3, column 15 to column 16)",
+ " (in 'C:/Users/AGNIES~1/Desktop/SEM8~1/DATAAN~1/DataA/DATA-A~1/Lab4/height_2b_ppc.stan', line 3, column 3 to column 18)",
  " (in 'C:/Users/AGNIES~1/Desktop/SEM8~1/DATAAN~1/DataA/DATA-A~1/Lab4/height_2b_ppc.stan', line 10, column 15 to column 16)"};
 
 
